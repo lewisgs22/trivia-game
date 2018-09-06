@@ -1,0 +1,57 @@
+.title {
+    text-align: center;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+#clock {
+    text-align: center;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+#questions {
+    text-align: center;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+/*body {	
+	background: linear-gradient(to bottom, #0DCDFF, #0C9BE8, #0C9BE8, #0055E8, #0055E8 );
+	background-size: 100%;
+	background-repeat: no-repeat;
+}*/
+
+body:before{
+	content:'';
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: -1;
+	background: linear-gradient(to right bottom, rgba(255,255,255,0.2), #21D4FD 75%);
+}
+
+#submit {
+    color: black;
+    background-color: lightgray;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+#begin:hover {
+    color: white;
+}
+
+#submit:hover {
+    color: white;
+}
+
+#begin {
+    color: black;
+    background-color: lightgray;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size: 24px;
+    margin-top: 200px;
+    margin-left: 600px;
+}

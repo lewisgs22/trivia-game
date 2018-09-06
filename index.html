@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Office Trivia!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/images/prison-mike.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
+    <script type="text/javascript" src="jquery.js"></script>
+  </head>
+  <body>
+      <div class="title">
+          <h1>"the Office" Trivia!</h1>
+      </div>
+
+      <br><br>
+
+      <button id="begin">Begin</button>
+
+      <div id="hidden">
+      <div class="timer">
+          <h4 id="clock">Time Remaining: </h4>
+      </div>
+
+      <br><br>
+
+      <div id="questions">
+
+        <h3>Easy</h3>
+
+        <br>
+
+          <p>What is Michael's middle name?</p>
+
+          <label for="mmn">
+                <input id="mmn" type="radio" name="mmn"> Craig
+          </label>
+
+          <label for="mmn">
+                <input id="mmn" type="radio" name="mmn"> Gary
+          </label>
+
+          <label for="mmn">
+                <input id="mmn" type="radio" name="mmn"> David
+          </label>
+
+          <label for="mmn">
+                <input id="mmn" type="radio" name="mmn"> Geoffery
+          </label>
+
+          <br><br>
+
+          <p>Who is assistant (to the) regional manager?</p>
+
+          <label for="arm">
+                <input id="arm" type="radio" name="arm"> Jim
+          </label>
+
+          <label for="arm">
+                <input id="arm" type="radio" name="arm"> Andy
+          </label>
+
+          <label for="arm">
+                <input id="arm" type="radio" name="arm"> Dwight
+          </label>
+
+          <label for="arm">
+                <input id="arm" type="radio" name="arm"> Stanley
+          </label>
+
+          <br><br>
+
+          <p>What is the name of Michael's movie?</p>
+
+          <label for="tlm">
+                <input id="tlm" type="radio" name="tlm"> Adventures of Michael Scarn
+          </label>
+
+          <label for="tlm">
+                <input id="tlm" type="radio" name="tlm"> Michael Scarn: Golden Face's Revenge
+          </label>
+
+          <label for="tlm">
+                <input id="tlm" type="radio" name="tlm"> Threat Level Midnight
+          </label>
+
+          <label for="tlm">
+                <input id="tlm" type="radio" name="tlm"> Cleanup on aisle 5
+          </label>
+
+          <br><br>
+
+          <p>What is Jim's last name?</p>
+
+          <label for="jln">
+                <input id="jln" type="radio" name="jln"> Halpert
+          </label>
+
+          <label for="jln">
+                <input id="jln" type="radio" name="jln"> Harris
+          </label>
+
+          <label for="jln">
+                <input id="jln" type="radio" name="jln"> Beasley
+          </label>
+
+          <label for="jln">
+                <input id="jln" type="radio" name="jln"> Hudson
+          </label>
+
+          <br><br>
+
+          <p>Who was Pam engaged to before Jim?</p>
+
+          <label for="roy">
+                <input id="roy" type="radio" name="roy"> Andy
+          </label>
+
+          <label for="roy">
+                <input id="roy" type="radio" name="roy"> Todd
+          </label>
+
+          <label for="roy">
+                <input id="roy" type="radio" name="roy"> Kurt
+          </label>
+
+          <label for="roy">
+                <input id="roy" type="radio" name="roy"> Roy
+          </label>
+          
+          <br><br><br>
+
+        <h3>Intermediate</h3>
+
+        <br>
+
+          <p>What comapny eventually buys Dunder Mifflin?</p>
+
+          <label for="sabre">
+                <input id="sabre" type="radio" name="sabre"> Best Buy
+          </label>
+
+          <label for="sabre">
+                <input id="sabre" type="radio" name="sabre"> Sabre
+          </label>
+
+          <label for="sabre">
+                <input id="sabre" type="radio" name="sabre"> Staples
+          </label>
+
+          <label for="sabre">
+                <input id="sabre" type="radio" name="sabre"> Office Depot
+          </label>
+
+          <br><br>
+
+          <p>What is Creed's job?</p>
+
+          <label for="quabbity">
+                <input id="quabbity" type="radio" name="quabbity"> Accounting
+          </label>
+
+          <label for="quabbity">
+                <input id="quabbity" type="radio" name="quabbity"> Quality Assurance
+          </label>
+
+          <label for="quabbity">
+                <input id="quabbity" type="radio" name="quabbity"> Customer Service
+          </label>
+
+          <label for="quabbity">
+                <input id="quabbity" type="radio" name="quabbity"> Human Resources
+          </label>
+
+          <br><br>
+
+          <p>What is David Wallace's title?</p>
+
+          <label for="cfo">
+                <input id="cfo" type="radio" name="cfo"> CEO
+          </label>
+
+          <label for="cfo">
+                <input id="cfo" type="radio" name="cfo"> Chairman of the Board
+          </label>
+
+          <label for="cfo">
+                <input id="cfo" type="radio" name="cfo"> Vice President
+          </label>
+
+          <label for="cfo">
+                <input id="cfo" type="radio" name="cfo"> CFO
+          </label>
+
+          <br><br>
+
+          <p>What started a fire in the break room?</p>
+
+          <label for="fire-guy">
+                <input id="fire-guy" type="radio" name="fire-guy"> Kevin
+          </label>
+
+          <label for="fire-guy">
+                <input id="fire-guy" type="radio" name="fire-guy"> Dwight
+          </label>
+
+          <label for="fire-guy">
+                <input id="fire-guy" type="radio" name="fire-guy"> Ryan
+          </label>
+
+          <label for="fire-guy">
+                <input id="fire-guy" type="radio" name="fire-guy"> Kelly
+          </label>
+
+          <br><br>
+
+          <p>Who likes to play crosswords?</p>
+
+          <label for="stanley">
+                <input id="stanley" type="radio" name="stanley"> Angela
+          </label>
+
+          <label for="stanley">
+                <input id="stanley" type="radio" name="stanley"> Oscar
+          </label>
+
+          <label for="stanley">
+                <input id="stanley" type="radio" name="stanley"> Phyllis
+          </label>
+
+          <label for="stanley">
+                <input id="stanley" type="radio" name="stanley"> Stanley
+          </label>
+
+          <br><br><br>
+
+        <h3>Hard</h3>
+
+        <br>
+
+          <p>Whose mother is in a wheelchair?</p>
+
+          <label for="wheelchair">
+                <input id="wheelchair" type="radio" name="wheelchair"> Creed
+          </label>
+
+          <label for="wheelchair">
+                <input id="wheelchair" type="radio" name="wheelchair"> Oscar
+          </label>
+
+          <label for="wheelchair">
+                <input id="wheelchair" type="radio" name="wheelchair"> Michael
+          </label>
+
+          <label for="wheelchair">
+                <input id="wheelchair" type="radio" name="wheelchair"> Pam
+          </label>
+
+          <br><br>
+
+          <p>How many secretaries does the office have throughout the show?</p>
+
+          <label for="ronni">
+                <input id="ronni" type="radio" name="ronni"> 1
+          </label>
+
+          <label for="ronni">
+                <input id="ronni" type="radio" name="ronni"> 2
+          </label>
+
+          <label for="ronni">
+                <input id="ronni" type="radio" name="ronni"> 3
+          </label>
+
+          <label for="ronni">
+                <input id="ronni" type="radio" name="ronni"> 4
+          </label>
+
+          <br><br>
+
+          <p>Where do Michael and Holly end up moving?</p>
+
+          <label for="boulder">
+                <input id="boulder" type="radio" name="boulder"> Scottsdale
+          </label>
+
+          <label for="boulder">
+                <input id="boulder" type="radio" name="boulder"> Boulder
+          </label>
+
+          <label for="boulder">
+                <input id="boulder" type="radio" name="boulder"> Denver
+          </label>
+
+          <label for="boulder">
+                <input id="boulder" type="radio" name="boulder"> Philidelphia
+          </label>
+
+          <br><br>
+
+          <p>What kind of car does Dwight drive?</p>
+
+          <label for="car">
+                <input id="car" type="radio" name="car"> Ford Bronco
+          </label>
+
+          <label for="car">
+                <input id="car" type="radio" name="car"> Chrysler Sebring
+          </label>
+
+          <label for="car">
+                <input id="car" type="radio" name="car"> Pontiac Trans-Am
+          </label>
+
+          <label for="car">
+                <input id="car" type="radio" name="car"> Subaru Outback
+          </label>
+
+          <br><br>
+
+          <p>Which of Dwight's friends is hired to break Oscars legs?</p>
+
+          <label for="trevor">
+                <input id="trevor" type="radio" name="trevor"> Trevor
+          </label>
+
+          <label for="trevor">
+                <input id="trevor" type="radio" name="trevor"> Gabor
+          </label>
+
+          <label for="trevor">
+                <input id="trevor" type="radio" name="trevor"> Mose
+          </label>
+
+          <label for="trevor">
+                <input id="trevor" type="radio" name="trevor"> Nate
+          </label> 
+
+          <br><br><br>
+
+        <h3>Very Hard</h3>
+
+        <br>
+
+          <p>What is Jim's favorite food?</p>
+
+          <label for="lobster">
+                <input id="lobster" type="radio" name="lobster"> Steak
+          </label>
+
+          <label for="lobster">
+                <input id="lobster" type="radio" name="lobster"> Tuna
+          </label>
+
+          <label for="lobster">
+                <input id="lobster" type="radio" name="lobster"> Lobster
+          </label>
+
+          <label for="lobster">
+                <input id="lobster" type="radio" name="lobster"> Ham and cheese sandwich
+          </label>
+
+          <br><br>
+
+          <p>What character does Michael play in "Belle's, Bourbon, and Bullets"?</p>
+
+          <label for="BBB">
+                <input id="BBB" type="radio" name="BBB"> Voodoo Mama Juujuu
+          </label>
+
+          <label for="BBB">
+                <input id="BBB" type="radio" name="BBB"> Nathaniel Nutmeg
+          </label>
+
+          <label for="BBB">
+                <input id="BBB" type="radio" name="BBB"> Caleb Crawdad
+          </label>
+
+          <label for="BBB">
+                <input id="BBB" type="radio" name="BBB"> The Butler
+          </label>
+
+          <br><br>
+
+          <p>Kevin's band mainly covers songs from this band:</p>
+
+          <label for="police">
+                <input id="police" type="radio" name="police"> U2
+          </label>
+
+          <label for="police">
+                <input id="police" type="radio" name="police"> The Police
+          </label>
+
+          <label for="police">
+                <input id="police" type="radio" name="police"> The Rolling Stones
+          </label>
+
+          <label for="police">
+                <input id="police" type="radio" name="police"> Men at Work
+          </label>
+
+          <br><br>
+
+          <p>Everyone is upset when Michael orders pizza from here:</p>
+
+          <label for="pizza">
+                <input id="pizza" type="radio" name="pizza"> Alfredo's Pizza Cafe
+          </label>
+
+          <label for="pizza">
+                <input id="pizza" type="radio" name="pizza"> Dominoes
+          </label>
+
+          <label for="pizza">
+                <input id="pizza" type="radio" name="pizza"> Pizza by Alfredo
+          </label>
+
+          <label for="pizza">
+                <input id="pizza" type="radio" name="pizza"> Godfather's Pizza
+          </label>
+
+          <br><br>
+
+          <p>What is Michael Scott's greatest fear?</p>
+
+          <label for="nothing">
+                <input id="nothing" type="radio" name="nothing"> He's not afraid of anything
+          </label>
+
+          <label for="nothing">
+                <input id="nothing" type="radio" name="nothing"> Loneliness
+          </label>
+
+          <label for="nothing">
+                <input id="nothing" type="radio" name="nothing"> Snakes
+          </label>
+
+          <label for="nothing">
+                <input id="nothing" type="radio" name="nothing"> Women
+          </label>
+
+          <br><br><br><br>
+
+          <button id="submit">Submit</button>
+
+          <br><br><br>
+        </div>
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/javascript/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  </body>
+</html>
