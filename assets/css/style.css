@@ -13,11 +13,16 @@
     font-family: 'Noto Serif JP', sans-serif;
 }
 
-/*body {	
+#container {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+body {	
 	background: linear-gradient(to bottom, #0DCDFF, #0C9BE8, #0C9BE8, #0055E8, #0055E8 );
 	background-size: 100%;
 	background-repeat: no-repeat;
-}*/
+}
 
 body:before{
 	content:'';
@@ -31,27 +36,46 @@ body:before{
 
 #submit {
     color: black;
-    background-color: lightgray;
-    border: none;
+    background-color: transparent;
+    border-color: black;
     border-radius: 12px;
     font-family: 'Noto Serif JP', sans-serif;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 #begin:hover {
     color: white;
+    border-color: white;
 }
 
 #submit:hover {
     color: white;
+    border-color: white;
 }
 
 #begin {
     color: black;
-    background-color: lightgray;
-    border: none;
+    background-color: transparent;
+    border-color: black;
     border-radius: 12px;
     font-family: 'Noto Serif JP', sans-serif;
     font-size: 24px;
-    margin-top: 200px;
-    margin-left: 600px;
+    margin-top: 15%;
+    margin-left: 45%;
+    cursor: pointer;
+}
+
+#empty {
+    color: transparent;
+    margin-top: 500px;
+}
+
+#results {
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    font-family: 'Noto Serif JP', sans-serif;
+    text-align: center;
+    margin: 10% 20% 15% 20%;
 }
