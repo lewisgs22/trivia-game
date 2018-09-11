@@ -1,29 +1,3 @@
-/*let number = 300;
-let intervalID;
-
-$("#begin").on("click", run)
-
-$(index.html).ready (function run() {
-    intervalId = setInterval(decrement, 1000);
-  });
-
-  function decrement() {
-
-    number--;
-
-    $("#clock").html("<h4>" + "Time Remaining: " + "</h4>" + "<h4>" + number + "</h4>");
-
-    if (number === 0) {
-
-      stop();
-    }
-  }
-
-  function stop() {
-
-    clearInterval(intervalId);
-  }*/
-
   document.getElementById('clock').innerHTML = 05 + ":" + 00;
 startTimer();
 
@@ -35,10 +9,8 @@ function startTimer() {
   if(s==59){
     m=m-1;
   }
-  if(m==0 && s==0){redirect();}
-
-  function redirect() {
-    window.location="file:///Users/lewisgregerson-spencer/Desktop/trivia-game/results.html"
+  if(m==0 && s==0){
+    redirect();
   }
   
   document.getElementById('clock').innerHTML =
@@ -51,6 +23,35 @@ function checkSecond(sec) {
   if (sec < 0) {sec = "59"};
   return sec;
   }
+
+  function redirect() {
+    window.location="file:///Users/lewisgregerson-spencer/Desktop/trivia-game/results.html"
+  }
+
+  
+
+
+  var numberCorrect = 0;
+
+function checkAnswers() { 
+var yup = $("input");
+var answerButtons = Array.from(yup)
+console.log(answerButtons)
+for(i=0; i<answerButtons.length; i++) {
+  var button = answerButtons[i];
+  //console.log(button.value)
+  //console.log(button.checked)
+  
+  if (button.value == "correct") {
+    console.log('found one')
+    numberCorrect++;
+    }
+  }
+  $("#correctans").text("Correct: " + numberCorrect);
+  console.log(numberCorrect);
+}
+
+$("#submit").on("click", checkAnswers())
 
 
 
