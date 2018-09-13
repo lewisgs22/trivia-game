@@ -79,3 +79,8 @@ body:before{
     text-align: center;
     margin: 10% 20% 15% 20%;
 }
+
+#questionspage {
+    text-align: center;
+    font-family: 'Noto Serif JP', sans-serif;
+}
